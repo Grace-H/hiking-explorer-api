@@ -1,0 +1,31 @@
+{
+   "name": "react-play-api",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "ts-node src/index.ts",
+      "create-migration": "typeorm migration:create",
+      "run-migration": "npx typeorm-ts-node-commonjs migration:run -d ./src/data-source.ts",
+      "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.1",
+      "express": "^4.18.1",
+      "knex": "^2.2.0",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "tsconfig-paths": "^4.0.0",
+      "typeorm": "^0.3.7"
+   },
+   "devDependencies": {
+      "@types/node": "^16.11.10",
+      "nodemon": "^2.0.19",
+      "ts-node": "10.7.0",
+      "typescript": "4.5.2"
+   }
+}
